@@ -28,7 +28,7 @@ no_index:
 provides:
   Search::Fulltext::Tokenizer::MeCab:
     file: lib/Search/Fulltext/Tokenizer/MeCab.pm
-    version: 1.00
+    version: 1.01
 requires:
   Cwd: 0
   Encode: 0
@@ -38,5 +38,5 @@ requires:
 resources:
   bugtracker: https://github.com/laysakura/Search-Fulltext-Tokenizer-MeCab/issues
   homepage: https://github.com/laysakura/Search-Fulltext-Tokenizer-MeCab
-  repository: https://github.com/laysakura/Search-Fulltext-Tokenizer-MeCab.git
-version: 1.00
+  repository: git://github.com/laysakura/Search-Fulltext-Tokenizer-MeCab.git
+version: 1.01
