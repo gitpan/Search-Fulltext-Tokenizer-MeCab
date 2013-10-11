@@ -3,7 +3,7 @@ use strict;
 use warnings;
 #use utf8;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 use Text::MeCab;
 use Encode;
 
@@ -99,11 +99,11 @@ Only you have to do is specify C<perl 'Search::Fulltext::Tokenizer::MeCab::token
 
 You are supposed to use UTF-8 strings for C<docs>.
 
-Alghough various queries are available like L<Search::Tokenizer>,
+Although various queries are available like L<Search::Fulltext/QUERIES>,
 I<wildcard query> (e.g. '我*') and I<phrase query> (e.g. '"我輩は猫である"') are not supported.
 
 User dictionary can be used to change the tokenizing behavior of internally-used L<Text::MeCab>.
-See L</"ENVIRONMENTAL VARIOUS"> section for detailes.
+See L</ENVIRONMENTAL VARIABLES|ENVIRONMENTAL_VARIABLES"> section for detailes.
 
 =head1 ENVIRONMENTAL VARIABLES
 
@@ -122,6 +122,7 @@ Specify path(s) to B<MeCab's user dictionary>.
 See MeCab's manual to learn how to create user dictionary.
 
 Examples:
+
     MECABDIC_USERDIC="/path/to/yourdic1.dic"
     MECABDIC_USERDIC="/path/to/yourdic1.dic, /path/to/yourdic2.dic"
 
@@ -151,9 +152,13 @@ Note that not only C<docs> but also queries are also tokenized.
 
 Bug reports and pull requests are welcome at L<https://github.com/laysakura/Search-Fulltext-Tokenizer-MeCab> !
 
+To read this manual via C<perldoc>, use C<-t> option for correctly displaying UTF-8 caracters.
+
+    $ perldoc -t Search::Fulltext::Tokenizer::MeCab
+
 =head1 VERSION
 
-Version 1.01
+Version 1.02
 
 =head1 AUTHOR
 
